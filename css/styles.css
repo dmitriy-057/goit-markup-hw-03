@@ -1,0 +1,250 @@
+:root {
+  /* Основные шрифты */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* Основной цвет текста */
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --hover-color: #2196f3;
+
+  /* Основной цвет фона */
+  --main-background-color: #e5e5e5;
+  --secondary-background-color: #fff;
+  --third-background-color: #2f303a;
+}
+
+/* Главная */
+body {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.list {
+  list-style: none;
+}
+/* Ссылки */
+.link {
+  text-decoration: none;
+}
+/* Кнопки */
+.button {
+  cursor: pointer;
+}
+/* Текст лого */
+.logo-text {
+  color: #2196f3;
+}
+/* Хедер */
+.header-link {
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000;
+}
+
+.header {
+  background-color: #ffffff;
+}
+.nav-link {
+  color: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+}
+/* Навигация */
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--hover-color);
+}
+.current {
+  color: var(--hover-color);
+}
+
+.contacts {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--hover-color);
+}
+/* Герой */
+.hero {
+  background-color: var(--third-background-color);
+  /* height: 600px;
+  width: 1600px;
+  left: 0px;
+  top: 80px;
+  border-radius: 0px; */
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--hover-color);
+  height: 50px;
+  width: 200px;
+  /* left: 700px;
+  top: 430px;
+  border-radius: 4px; */
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hover-color);
+}
+/* Особенности */
+
+.particular-title {
+  visibility: hidden;
+}
+.particular-subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.particular-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-color);
+}
+
+/* О нас */
+.about {
+  /* background-color: var(--main-background-color); */
+}
+.about-list {
+  text-align: center;
+}
+.about-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+/* Наша команда */
+.team {
+  background-color: #f5f4fa;
+}
+.team-list {
+  text-align: center;
+}
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+.team-item {
+  background-color: var(--secondary-background-color);
+}
+.person-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+}
+.person-text {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--secondary-color);
+}
+
+/* Футер */
+.footer {
+  background-color: var(--third-background-color);
+}
+.footer-link {
+  font-family: var(--secondary-font);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.address {
+  font-style: normal;
+}
+.address-location {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff;
+}
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--hover-color);
+}
+
+/* Портфолио */
+
+/* Проекты */
+.portfolio {
+  /* background-color: var(--main-background-color); */
+}
+.portfolio-first-title {
+  visibility: hidden;
+}
+.portfolio-list {
+  text-align: center;
+}
+.buttons-item {
+  display: inline;
+}
+
+.portfolio-button {
+  font-style: var(--main-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  background-color: #f5f4fa;
+  color: var(--main-color);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--hover-color);
+  color: #fff;
+}
+
+.portfolio-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--secondary-color);
+}
+
+.portfolio-item {
+  text-align: center;
+}
