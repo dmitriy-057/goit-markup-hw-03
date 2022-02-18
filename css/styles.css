@@ -23,12 +23,32 @@ body {
   letter-spacing: 0.02em;
   text-align: left;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 .list {
   list-style: none;
 }
+
 /* Ссылки */
 .link {
   text-decoration: none;
+}
+
+/* Общий контейнер */
+.conteiner {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Кнопки */
 .button {
@@ -39,6 +59,25 @@ body {
   color: #2196f3;
 }
 /* Хедер */
+.header-conteiner {
+  display: flex;
+}
+.header-link {
+  /* display: flex; */
+  margin-right: 93px;
+}
+.nav-list {
+  display: flex;
+}
+.header-list {
+  display: flex;
+
+  /* margin-left: 331px; */
+}
+.header {
+  background-color: #ffffff;
+}
+
 .header-link {
   font-family: var(--secondary-font);
   font-size: 26px;
@@ -47,25 +86,32 @@ body {
   letter-spacing: 0.03em;
   color: #000;
 }
-
-.header {
-  background-color: #ffffff;
-}
+/* Навигация */
 .nav-link {
   color: inherit;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
 }
-/* Навигация */
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--hover-color);
+}
+/* .nav-item {
+  margin-right: 50px;
+} */
+.nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 .current {
   color: var(--hover-color);
 }
 
+/* контакты */
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
 .contacts {
   font-size: 14px;
   font-weight: 500;
@@ -81,11 +127,6 @@ body {
 /* Герой */
 .hero {
   background-color: var(--third-background-color);
-  /* height: 600px;
-  width: 1600px;
-  left: 0px;
-  top: 80px;
-  border-radius: 0px; */
 }
 
 .hero-title {
@@ -135,9 +176,7 @@ body {
 }
 
 /* О нас */
-.about {
-  /* background-color: var(--main-background-color); */
-}
+
 .about-list {
   text-align: center;
 }
@@ -203,9 +242,7 @@ body {
 /* Портфолио */
 
 /* Проекты */
-.portfolio {
-  /* background-color: var(--main-background-color); */
-}
+
 .portfolio-first-title {
   visibility: hidden;
 }
@@ -221,7 +258,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
-  text-align: center;
+  /* text-align: center; */
   background-color: #f5f4fa;
   color: var(--main-color);
 }
