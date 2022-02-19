@@ -137,13 +137,9 @@ ul {
 .hero-conteiner {
   max-width: 1600px;
   min-width: none;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .hero {
-  /* max-width: 1600px;
-  min-width: none; */
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: var(--third-background-color);
 }
 
@@ -156,10 +152,7 @@ ul {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  padding-top: 200px;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-button {
@@ -180,7 +173,6 @@ ul {
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -217,7 +209,17 @@ ul {
 }
 
 /* О нас */
-
+.about-conteiner {
+  margin-bottom: 188px;
+}
+.about-list {
+  display: flex;
+  margin-right: -30px;
+}
+.about-item {
+  margin-right: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
 .about-list {
   text-align: center;
 }
@@ -225,19 +227,32 @@ ul {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 /* Наша команда */
+.team-conteiner {
+  margin-bottom: 94px;
+}
+
 .team {
   background-color: #f5f4fa;
 }
 .team-list {
-  text-align: center;
+  display: flex;
+  margin-right: -30px;
+}
+.team-item {
+  margin-right: 30px;
+  flex-basis: calc((100% -90px) / 4);
 }
 .team-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .team-item {
   background-color: var(--secondary-background-color);
@@ -283,17 +298,30 @@ ul {
 /* Портфолио */
 
 /* Проекты */
-
-.portfolio-first-title {
-  visibility: hidden;
+.portfolio-conteiner {
+  margin-bottom: 94px;
 }
+
 .portfolio-list {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.portfolio-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
 }
 .buttons-item {
   display: inline;
 }
-
+.portfolio-first-title {
+  visibility: hidden;
+}
 .portfolio-button {
   font-style: var(--main-font);
   font-size: 16px;
@@ -323,6 +351,8 @@ ul {
   color: var(--secondary-color);
 }
 
-.portfolio-item {
-  text-align: center;
+.portfolio-link {
+  display: inline-block;
+  width: 370px;
+  /* height: 404px; */
 }
